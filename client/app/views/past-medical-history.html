@@ -1,0 +1,491 @@
+<section class="dr-main-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="dr-header-sec">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="logo"><a href="index.html"><img src="images/logo.png" alt="CoinMD"></a></div>
+            </div>
+            <div class="col-md-9 col-sm-12 text-center">
+              <div class="right-sec-header">
+                <ul class="pull-right">
+                    <li class="btn logeninfon-btn"> <a href="javascript:;" class="dropdown-toggle" ng-click="logout()"> Logout </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="contant-box">
+  <div class="Create Leads">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-4">
+          <div class="page-name">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-listing">
+    <div class="form-box lead">
+      <div class="container bg-white">
+        <ul class="ccollapsible popout" data-collapsible="accordion">
+          <li class="form-box Address-note">
+            <div class="collapsible-header active"> Past Medical History <i class="fa fa-angle-right"></i></div>
+            <div class="collapsible-body">
+              <div class="col-div hedi-p">
+                <h4>Check those questions to which your answer is yes (leave others blank).</h4>
+                <form class="form-tag">
+                <div class="row">
+                  <div class="    select-box">
+                    <div class="col-md-12">
+                      <p>
+                        <input type="checkbox" id="years" ng-model="pastinfo.ans.checkheartAttack" />
+                        <label for="years">{{pastinfo.ques.heartattack}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="Fever" ng-model="pastinfo.ans.checkrheumaticFev"/>
+                        <label for="Fever">{{pastinfo.ques.rhfever}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="murmur" ng-model="pastinfo.ans.checkheartMurmur"/>
+                        <label for="murmur">{{pastinfo.ques.heartmu}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="arteries" ng-model="pastinfo.ans.checkdiseaseOfArteries" />
+                        <label for="arteries">{{pastinfo.ques.doa}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="veins"  ng-model="pastinfo.ans.checkVaricoseVenis" />
+                        <label for="veins">{{pastinfo.ques.vv}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="legs"  ng-model="pastinfo.ans.checkArthritisOfLungsOrARms"/>
+                        <label for="legs">{{pastinfo.ques.aol}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="abnormal" ng-model="pastinfo.ans.checkDiabetes"/>
+                        <label for="abnormal">{{pastinfo.ques.doabt}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="Phlebitis" ng-model="pastinfo.ans.checkPhlebitis"/>
+                        <label for="Phlebitis">{{pastinfo.ques.Phlebitis}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="fainting" ng-model="pastinfo.ans.checkDizziness"/>
+                        <label for="fainting">{{pastinfo.ques.Dizziness}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="seizures" ng-model="pastinfo.ans.checkEpilepsy"/>
+                        <label for="seizures">{{pastinfo.ques.Epilepsy}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="Stroke" ng-model="pastinfo.ans.checkStroke"/>
+                        <label for="Stroke">{{pastinfo.ques.s}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="Diphtheria" ng-model="pastinfo.ans.checkDiphtheria"/>
+                        <label for="Diphtheria">{{pastinfo.ques.d}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="Scarlet" ng-model="pastinfo.ans.checkScarletFever"/>
+                        <label for="Scarlet">{{pastinfo.ques.SF}}</label>
+                      </p>
+                      <p>                       
+                        <input type="checkbox" id="Infectious" ng-model="pastinfo.ans.checkInfectiousMononucleosis"/>
+                        <label for="Infectious">{{pastinfo.ques.Im}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="emotional" ng-model="pastinfo.ans.checkNervousProblem"/>
+                        <label for="emotional">{{pastinfo.ques.noep}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="eye" ng-model="pastinfo.ans.checkAnemia"/>
+                        <label for="eye">{{pastinfo.ques.Anemia}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="problems" ng-model="pastinfo.ans.checkThyroid"/>
+                        <label for="problems">{{pastinfo.ques.Thyroid}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="Pneumonia" ng-model="pastinfo.ans.checkPneumonia"/>
+                        <label for="Pneumonia">{{pastinfo.ques.Pneumonia}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="Bronchitis" ng-model="pastinfo.ans.checkBronchitis"/>
+                        <label for="Bronchitis">{{pastinfo.ques.Bronchitis}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="eye" ng-model="pastinfo.ans.checkAsthma"/>
+                        <label for="eye">{{pastinfo.ques.Asthma}} </label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="X-ray" ng-model="pastinfo.ans.checkabnormalChest"/>
+                        <label for="X-ray">{{pastinfo.ques.abnormalx}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="disease" ng-model="pastinfo.ans.checkotherLungDisease"/>
+                        <label for="disease">{{pastinfo.ques.old}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="back" ng-model="pastinfo.ans.checkinjuries"/>
+                        <label for="back">{{pastinfo.ques.itbalj}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="eye" ng-model="pastinfo.ans.checkBrokenBones"/>
+                        <label for="eye">{{pastinfo.ques.bb}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="gall" ng-model="pastinfo.ans.checkJaundice"/>
+                        <label for="gall">{{pastinfo.ques.Jaundice}}</label>
+                      </p>
+                      <p>
+                        <input type="checkbox" id="surgery" ng-model="pastinfo.ans.checkeyeSurgeryOrLaserTreatment"/>
+                        <label for="surgery">{{pastinfo.ques.Laser}}</label>
+                      </p>
+                    </div>
+                    <div class="col-md-12 other-explain">
+                      <div class="input-field form-group icon-field form-filed rgt">
+                        <textarea id="Comments-Person" class="materialize-textarea" ng-value="pastinfo.ans.checkComments"></textarea>
+                        <label for="Comments-Person">Comments </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4>Family Medical History</h4>
+                <div class="row">
+                  <div class="select-box">
+                    <div class="col-md-12">
+                      <p><strong>Father:</strong></p>
+                      <div class="row">
+                        <div class="col-md-2 radio-btn"><span>
+                          <input class="with-gap" name="chestupw" type="radio" id="FaAbnormal4" ng-value="true" ng-model="pastinfo.ans.fatheralive" />
+                          <label for="FaAbnormal4">Alive</label>
+                          </span></div>
+                        <div class="col-md-3">
+                          <div class="input-field form-group  icon-field form-filed lft"><i class="Starts-Date-icon icon-form"></i>
+                            <input id="Lead-Current" class="" type="text" ng-model="pastinfo.ans.fathercurrentAge">
+                            <label for="Lead-Current">Current age</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p>My father's general health is:</p>
+                        </div>
+                        <div class="col-md-12 radio-btn"> <span>
+                          <input class="with-gap" name="Excellent" type="radio" id="Excellent" ng-value="'Excellent'"  ng-model="pastinfo.ans.fathergeneralHealth" />
+                          <label for="Excellent">Excellent</label>
+                          </span><span>
+                          <input class="with-gap" name="Excellent" type="radio" id="Good" ng-value="'Good'" ng-model="pastinfo.ans.fathergeneralHealth"/>
+                          <label for="Good">Good</label>
+                          </span><span>
+                          <input class="with-gap" name="Excellent" type="radio" id="Fair" ng-value="'Fair'" ng-model="pastinfo.ans.fathergeneralHealth" />
+                          <label for="Fair">Fair</label>
+                          </span><span>
+                          <input class="with-gap" name="Excellent" type="radio" id="Poor" ng-value="'Poor'" ng-model="pastinfo.ans.fathergeneralHealth" />
+                          <label for="Poor">Poor</label>
+                          </span></div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="input-field form-group  icon-field form-filed lft no-icon">
+                            <input id="Reason-v" class="" type="text"  ng-model="pastinfo.ans.father.reasonForPoorHealth">
+                            <label for="Reason-v">Reason for poor health: </label>
+                          </div>
+                        </div>
+                        <div class="col-md-3 radio-btn"><span>
+                          <input class="with-gap" name="chestup" type="radio" id="Deceased"  ng-model="pastinfo.ans.fatherdeseased" ng-value="true"  />
+                          <label for="Deceased">Deceased</label>
+                          </span></div>
+                        <div class="col-md-4">
+                          <div class="input-field form-group  icon-field form-filed lft"><i class="Starts-Date-icon icon-form"></i>
+                            <input id="death" class="" type="text" ng-model="pastinfo.ans.fatherageOfDeath">
+                            <label for="death">Age at death </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="input-field form-group  icon-field form-filed lft no-icon">
+                            <input id="Cause" class="" type="text" ng-model="pastinfo.ans.fathercauseOfDeath">
+                            <label for="Cause">Cause of death </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="select-box">
+                    <div class="col-md-12">
+                      <p><strong>Mother:</strong></p>
+                      <div class="row">
+                        <div class="col-md-2 radio-btn"><span>
+                          <input class="with-gap" name="Mochestu " type="radio" id="MoAbnormal4" ng-value="true" ng-model="pastinfo.ans.motheralive" />
+                          <label for="MoAbnormal4">Alive</label>
+                          </span></div>
+                        <div class="col-md-3">
+                          <div class="input-field form-group  icon-field form-filed lft"><i class="Starts-Date-icon icon-form"></i>
+                            <input id="MoLead-Current" class="" type="text" ng-model="pastinfo.ans.mothercurrentAge">
+                            <label for="MoLead-Current">Current age</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p>My father's general health is:</p>
+                        </div>
+                        <div class="col-md-12 radio-btn"> <span>
+                          <input class="with-gap" name="MoExcellent" type="radio" id="MoExcellent" ng-value="'Excellent'" ng-model="pastinfo.ans.mothergeneralHealth" />
+                          <label for="MoExcellent">Excellent</label>
+                          </span><span>
+                          <input class="with-gap" name="MoExcellent" type="radio" id="MoGood" ng-value="'Good'" ng-model="pastinfo.ans.mothergeneralHealth" />
+                          <label for="MoGood">Good</label>
+                          </span><span>
+                          <input class="with-gap" name="MoExcellent" type="radio" id="MoFair"  ng-value="'Fair'" ng-model="pastinfo.ans.mothergeneralHealth"/>
+                          <label for="MoFair">Fair</label>
+                          </span><span>
+                          <input class="with-gap" name="MoExcellent" type="radio" id="MoPoor" ng-value="'Poor'" ng-model="pastinfo.ans.mothergeneralHealth" />
+                          <label for="MoPoor">Poor</label>
+                          </span></div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="input-field form-group  icon-field form-filed lft no-icon" ng-model="pastinfo.ans.motherreasonForPoorHealth">
+                            <input id="MoReason-v" class="" type="text">
+                            <label for="MoReason-v">Reason for poor health: </label>
+                          </div>
+                        </div>
+                        <div class="col-md-3 radio-btn"><span>
+                          <input class="with-gap" name="Moches" type="radio" id="MoDeceas" mg-value="true" ng-model="pastinfo.ans.motherdeseased" />
+                          <label for="MoDeceas">Deceased</label>
+                          </span></div>
+                        <div class="col-md-4">
+                          <div class="input-field form-group  icon-field form-filed lft"><i class="Starts-Date-icon icon-form"></i>
+                            <input id="Modeath" class="" type="text" ng-model="pastinfo.ans.motherageOfDeath">
+                            <label for="Modeath">Age at death </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="input-field form-group  icon-field form-filed lft no-icon">
+                            <input id="MoCause" class="" type="text" ng-model="pastinfo.ans.mothercauseOfDeath">
+                            <label for="MoCause">Cause of death </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4>Siblings</h4>
+                <div class="row">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="input-field col s12">
+                        <select ng-model="pastinfo.ans.siblingsnoOfBrothers" style="display:block !important; height: 35px !important">
+                          <option value="" disabled selected>Number of brothers</option>
+                          <option ng-value="1">Option 1</option>
+                          <option ng-value="2">Option 2</option>
+                          <option ng-value="3">Option 3</option>
+                        </select>
+                        <label>Number of brothers</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="input-field col s12">
+                        <select ng-model="pastinfo.ans.siblingsageOfBrothers" style="display:block !important;">
+                          <option value="" disabled selected>Age of brothers</option>
+                          <option ng-value="1"> 21</option>
+                          <option ng-value="2"> 22</option>
+                          <option ng-value="3"> 33</option>
+                        </select>
+                        <label>Age of brothers</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="input-field col s12">
+                        <select ng-model="pastinfo.ans.siblingsnoOfSisters" style="display:block !important;">
+                          <option value="" disabled selected>Number of sister</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Number of sister</label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="input-field col s12">
+                        <select ng-model="pastinfo.ans.siblingsageOfSisters" style="display:block !important;">
+                          <option value="" disabled selected>Age of sister</option>
+                          <option value="1"> 21</option>
+                          <option value="2"> 22</option>
+                          <option value="3"> 33</option>
+                        </select>
+                        <label>Age of brothers</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field form-group icon-field form-filed rgt no-icon">
+                        <textarea id="icon_Address " class="materialize-textarea" ng-model="pastinfo.ans.siblingshealthProblems"></textarea>
+                        <label for="icon_Address ">Health problems </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4>{{pastinfo.ques.ques}}</h4>
+                <form class="form-tag">
+                  <div class="row">
+                    <div class="select-box">
+                      <div class="col-md-12">
+                        <p>
+                          <input type="checkbox" id="under" ng-model="pastinfo.ans.relativesheartAttackUnder50"/>
+                          <label for="under"> {{pastinfo.ques.ques1}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Strokes"  ng-model="pastinfo.ans.relativesstrokesUnder50"/>
+                          <label for="Strokes">{{pastinfo.ques.ques2}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="pressure" ng-model="pastinfo.ans.relativeshighBp" />
+                          <label for="pressure">{{pastinfo.ques.ques3}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="cholesterol" ng-model="pastinfo.ans.relativeselevatedCholesterol"/>
+                          <label for="cholesterol">{{pastinfo.ques.ques4}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Diabetes" ng-model="pastinfo.ans.relativesdiabetes"/>
+                          <label for="Diabetes">{{pastinfo.ques.ques5}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="hay" ng-model="pastinfo.ans.relativesasthma"/>
+                          <label for="hay">{{pastinfo.ques.ques6}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Congenital" ng-model="pastinfo.ans.relativesCongenitalHeartDesease"/>
+                          <label for="Congenital">{{pastinfo.ques.ques7}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="operations" ng-model="pastinfo.ans.relativesheartOperations"/>
+                          <label for="operations">{{pastinfo.ques.ques8}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Glaucoma" ng-model="pastinfo.ans.relativesGlaucoma"/>
+                          <label for="Glaucoma">{{pastinfo.ques.ques9}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Obesity" ng-model="pastinfo.ans.relativesObesity"/>
+                          <label for="Obesity">{{pastinfo.ques.ques10}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Leukemia" ng-model="pastinfo.ans.relativesLeukemiaOrCancer"/>
+                          <label for="Leukemia">{{pastinfo.ques.ques11}}</label>
+                        </p>
+                      </div>
+                      <div class="col-md-12 other-explain">
+                        <div class="input-field form-group icon-field form-filed rgt">
+                          <textarea id="Comments-Person" class="materialize-textarea" ng-model="pastinfo.ans.relativesComments"></textarea>
+                          <label for="Comments-Person">Comments </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button name="singlebutton" class="btn btn-info btn-sm  btn-design" ng-click="saveData(pastinfo)">Save</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="top_ftr">
+      <div class="row">
+        <div class="col-xs-4">
+          <figure> <img src="images/security_symbol.png" alt="security_symbol"> </figure>
+          <h4>100% Secure Payments</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/timer_symbol.png" alt="timer_symbol"> </figure>
+          <h4>Fast and Easy Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/customer_support.png" alt="customer_support"> </figure>
+          <h4>Best Customer Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ftr_btm">
+      <div class="row">
+        <div class="col-md-3 col-xs-6">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="javascript:void(0);">About Us</a></li>
+            <li><a href="javascript:void(0);">Core Values</a></li>
+            <li><a href="javascript:void(0);">Careers</a></li>
+            <li><a href="javascript:void(0);">Blog</a></li>
+            <li><a href="javascript:void(0);">FAQ</a></li>
+            <li><a href="javascript:void(0);">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>POLICY INFO</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+            <li><a href="javascript:void(0);">Terms of Sale</a></li>
+            <li><a href="javascript:void(0);">Terms of Use</a></li>
+            <li><a href="javascript:void(0);">Takedown Policy</a></li>
+            <li><a href="javascript:void(0);">Sitemm col-md-3ap</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>COINMD BUSINESS</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Seller Registration</a></li>
+            <li><a href="javascript:void(0);">Online Shopping </a></li>
+            <li><a href="javascript:void(0);">Book Doctors Online </a></li>
+            <li><a href="javascript:void(0);">Advertise on CoinMD</a></li>
+            <li><a href="javascript:void(0);">Media Enquiries</a></li>
+            <li><a href="javascript:void(0);">Be an Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>NEED HELP ?</h4>
+          <div class="subscribe">
+            <input type="text" class="form-control" placeholder="Email Address">
+            <input type="button" class="btn_sub" value="Subscribe">
+          </div>
+          <ul class="social_links">
+            <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          </ul>
+          <di class="copy_right">
+            <p>COPYRIGHT 2017 COINMD, INC.</p>
+          </di>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

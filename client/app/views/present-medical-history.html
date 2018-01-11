@@ -1,0 +1,481 @@
+<section class="dr-main-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="dr-header-sec">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="logo"><a href="index.html"><img src="images/logo.png" alt="CoinMD"></a></div>
+            </div>
+            <div class="col-md-9 col-sm-12 text-center">
+              <div class="right-sec-header">
+                <ul class="pull-right">
+                    <li class="btn lopresentinfon-btn"> <a href="javascript:;" class="dropdown-toggle" ng-click="logout()"> Logout </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="contant-box">
+  <div class="Create Leads">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-4">
+          <div class="page-name">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-listing">
+    <div class="form-box lead">
+      <div class="container bg-white">
+        <ul class="ccollapsible popout" data-collapsible="accordion">
+          <li class="form-box Address-Information">
+            <div class="collapsible-header active"> Present Medical History <i class="fa fa-angle-right"></i></div>
+            <div class="collapsible-body">
+              <div class="col-div hedi-p">
+                <h4>Check those questions to which you answer yes (leave the others blank). </h4>
+                <form class="form-tag">
+                  <div class="row">
+                    <div class="    select-box">
+                      <div class="col-md-12">
+                        <p>
+                          <input type="checkbox" id="blood" ng-model="presentinfo.ans.checkBp"/>
+                          <label for="blood">{{presentinfo.ques.one}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="chest" ng-model="presentinfo.ans.checkChestPain" />
+                          <label for="chest">{{presentinfo.ques.two}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="thumping" ng-model="presentinfo.ans.checkHeartThumping" />
+                          <label for="thumping">{{presentinfo.ques.three}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="often" ng-model="presentinfo.ans.checkHeartRace" />
+                          <label for="often">{{presentinfo.ques.four}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="notice" ng-model="presentinfo.ans.checkExtraOrSkippedHeartBeats" />
+                          <label for="notice">{{presentinfo.ques.five}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="ankles" ng-model="presentinfo.ans.checkSwollenAnkles" />
+                          <label for="ankles">{{presentinfo.ques.six}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="hands" ng-model="presentinfo.ans.checkColdHandTrouble" />
+                          <label for="hands">{{presentinfo.ques.seven}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="ever" ng-model="presentinfo.ans.checkHeartTrouble" />
+                          <label for="ever">{{presentinfo.ques.eight}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="from" ng-model="presentinfo.ans.checkLegCramps" />
+                          <label for="from">{{presentinfo.ques.nine}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="difficulty" ng-model="presentinfo.ans.checkBreathingDifficulty" />
+                          <label for="difficulty">{{presentinfo.ques.ten}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="breath" ng-model="presentinfo.ans.checkOutOfBreathBeforeEveryonceElse" />
+                          <label for="breath">{{presentinfo.ques.eleven}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="get" ng-model="presentinfo.ans.checkoutOfBreathInStill" />
+                          <label for="get">{{presentinfo.ques.twelve}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="told" ng-model="presentinfo.ans.checkHighCholesterol" />
+                          <label for="told">{{presentinfo.ques.thirteen}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="abdominal" ng-model="presentinfo.ans.checkabdominalAorticAneurysm" />
+                          <label for="abdominal">{{presentinfo.ques.fourteen}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="that" ng-model="presentinfo.ans.checkCriticalAorticStenosis" />
+                          <label for="that">{{presentinfo.ques.fifteen}} </label>
+                        </p>
+                      </div>
+                      <div class="col-md-12 other-explain">
+                        <div class="input-field form-group icon-field form-filed rgt">
+                          <textarea id="Address-Person" class="materialize-textarea" ng-model="presentinfo.ans.checkcomments"></textarea>
+                          <label for="Address-Person">Comments </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4>Do you now have or have you recently experienced.</h4>
+                  <div class="row">
+                    <div class="    select-box">
+                      <div class="col-md-12">
+                        <p>
+                          <input type="checkbox" id="said" ng-model="presentinfo.ans.expbp" ng-model="presentinfo.ans.expbp" />
+                          <label for="said">{{presentinfo.ques.sixteen}}</label>
+                        <p>
+                          <input type="checkbox" id="recurrent" ng-model="presentinfo.ans.expChronic" />
+                          <label for="recurrent">{{presentinfo.ques.seventeen}}</label> 
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Episode" ng-model="presentinfo.ans.expbloodCough" />
+                          <label for="Episode">{{presentinfo.ques.eighteen}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="anxiety" ng-model="presentinfo.ans.expdepression" />
+                          <label for="anxiety">{{presentinfo.ques.nineteen}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Problems" ng-model="presentinfo.ans.expfatigue" />
+                          <label for="Problems">{{presentinfo.ques.twenty}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="headaches" ng-model="presentinfo.ans.expmigrane" />
+                          <label for="headaches">{{presentinfo.ques.twentyone}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="knees" ng-model="presentinfo.ans.exppainAnkles" />
+                          <label for="knees">{{presentinfo.ques.twentytwo}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="stiff" ng-model="presentinfo.ans.expjointPains" />
+                          <label for="stiff">{{presentinfo.ques.twentythree}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="legs" ng-model="presentinfo.ans.exppainInWalking" />
+                          <label for="legs">{{presentinfo.ques.twentyfour}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="blood" ng-model="presentinfo.ans.expfootProblems" />
+                          <label for="blood">{{presentinfo.ques.twentyfive}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Back" ng-model="presentinfo.ans.expbackProblems" />
+                          <label for="Back">{{presentinfo.ques.twentysix}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="intestinal" ng-model="presentinfo.ans.expstomacheAche" />
+                          <label for="intestinal">{{presentinfo.ques.twentyseven}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="vision" ng-model="presentinfo.ans.expvisionOrHearingProblem" />
+                          <label for="vision">{{presentinfo.ques.twentyeight}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="change" ng-model="presentinfo.ans.exprecentChangeInWartOrMole" />
+                          <label for="change">{{presentinfo.ques.twentynine}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="increased" ng-model="presentinfo.ans.expglaucoma" />
+                          <label for="increased">{{presentinfo.ques.thirty}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="noises" ng-model="presentinfo.ans.expexposureToLoudNoise" />
+                          <label for="noises">{{presentinfo.ques.thirtyone}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="such" ng-model="presentinfo.ans.expinfrctionsSuchAsPneumonia" />
+                          <label for="such">{{presentinfo.ques.thirtytwo}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="unexplained" ng-model="presentinfo.ans.expunexplainedWeightLoss" />
+                          <label for="unexplained">{{presentinfo.ques.thirtythree}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="dehydration" ng-model="presentinfo.ans.expfeverCasusingDehydrationAndRapidHeartBeat" />
+                          <label for="dehydration">{{presentinfo.ques.thirtyfour}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="thrombosis" ng-model="presentinfo.ans.expbloodClot" />
+                          <label for="thrombosis">{{presentinfo.ques.thirtyfive}}</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="causing" ng-model="presentinfo.ans.exphernia" />
+                          <label for="causing">A hernia that is causing symptoms?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="sores" ng-model="presentinfo.ans.expfootOrAnkleSoresThatWontHeal" />
+                          <label for="sores">Foot or ankle sores that won’t heal?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="problems" ng-model="presentinfo.ans.exppersistentPain" />
+                          <label for="problems">Persistent pain or problems walking after you have fallen?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="bleeding" ng-model="presentinfo.ans.expeyeProblems" />
+                          <label for="bleeding">Eye conditions such as bleeding in the retina or detached retina?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="transplant" ng-model="presentinfo.ans.expcataractOrLensTransplant" />
+                          <label for="transplant">Cataract or lens transplant?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="eye" ng-model="presentinfo.ans.explaserTreatmentOrEyeSurgery" />
+                          <label for="eye">Laser treatment or other eye surgery? </label>
+                        </p>
+                      </div>
+                      <div class="col-md-12 other-explain">
+                        <div class="input-field form-group icon-field form-filed rgt">
+                          <textarea id="Comments-Person" class="materialize-textarea" ng-model="presentinfo.ans.expcomments"></textarea>
+                          <label for="Comments-Person">Comments </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4>Women only answer the following. Do you have:</h4>
+                  <div class="row">
+                    <div class="    select-box">
+                      <div class="col-md-12">
+                        <p>
+                          <input type="checkbox" id="Menstrual" ng-model="presentinfo.ans.womensturalPeriodProb" />
+                          <label for="Menstrual">Menstrual period problems?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Significant" ng-model="presentinfo.ans.wochildbirthRealtedProb" />
+                          <label for="Significant">Significant childbirth - related problems?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Urine" ng-model="presentinfo.ans.wourineLossWhileYouCoughSneez" />
+                          <label for="Urine">Urine loss when you cough, sneeze or laugh?</label>
+                        </p>
+                      </div>
+                      <div class="explan">
+                        <div class="col-md-6">
+                          <div class="input-field   icon-field form-filed  no-icon">
+                            <input id="pelvic" type="text" ng-model="presentinfo.ans.wodateOfLastPelvicExam"/>
+                            <label for="pelvic"> Date of the last pelvic exam and / or Pap smear</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="input-field   icon-field form-filed lft no-icon">
+                            <input id="hormone" type="text" ng-model="presentinfo.ans.woanyHormoneReplacementTherapy" />
+                            <label for="hormone">Are you on any type of hormone replacement therapy?</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 other-explain">
+                        <div class="input-field form-group icon-field form-filed rgt">
+                          <textarea id="Comments-Person" class="materialize-textarea" ng-model="presentinfo.ans.wocomments"></textarea>
+                          <label for="Comments-Person">Comments </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4>Men and women answer the following:</h4>
+                  <div class="row">
+                    <div class="    select-box">
+                      <div class="col-md-12">
+                        <p>
+                          <input type="checkbox" id="Menstrual" ng-model="presentinfo.ans.mwmensturalPeriodProblem" />
+                          <label for="Menstrual">Menstrual period problems?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Significant" ng-model="presentinfo.ans.mwmensturalPeriodProblem" />
+                          <label for="Significant">Significant childbirth - related problems?</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="Urine" ng-model="presentinfo.ans.mwmensturalPeriodProblem" />
+                          <label for="Urine">Urine loss when you cough, sneeze or laugh?</label>
+                        </p>
+                      </div>
+                      <div class="explan">
+                        <div class="col-md-5 other-explain">
+                          <div class="input-field form-group icon-field form-filed rgt">
+                            <textarea id="prescription" class="materialize-textarea" ng-model="presentinfo.ans.mwprescriptionMedicines"></textarea>
+                            <label for="prescription">List any prescription medications you are now taking: </label>
+                          </div>
+                        </div>
+                        <div class="col-md-7 other-explain">
+                          <div class="input-field form-group icon-field form-filed rgt">
+                            <textarea id="self" class="materialize-textarea" ng-model="presentinfo.ans.mwselfPrescribedMedicines"></textarea>
+                            <label for="self">List any self-prescribed medications, dietary supplements, or vitamins you are now taking: </label>
+                          </div>
+                        </div>
+                        <div class="  ques-div">
+                          <div class="col-md-12">
+                            <p>Date of last complete physical examination:</p>
+                            <div class="radio-btn"> <span>
+                              <input type="radio" class=" with-gap" id="Norl" name="Normal" ng-value="'Normal'" ng-model="presentinfo.ans.dateOflastCompletePhysicalExamination" />
+                              <label for="Norl" class="datepicker">Normal</label>
+                              </span><span>
+                              <input class="with-gap" name="Normal" type="radio" id="Abnormal" ng-value="'Abnormal'" ng-model="presentinfo.ans.dateOflastCompletePhysicalExamination" />
+                              <label for="Abnormal">Abnormal</label>
+                              </span> <span>
+                              <input class="with-gap" name="Normal" type="radio" id="Abnormal " ng-value="'Never'" ng-model="presentinfo.ans.dateOflastCompletePhysicalExamination" />
+                              <label for="Never ">Never </label>
+                              </span> <span>
+                              <input class="with-gap" name="Normal" type="radio" id="remember" ng-value="'CAn not remember'" ng-model="presentinfo.ans.dateOflastCompletePhysicalExamination" />
+                              <label for="remember">Can’t remember</label>
+                              </span> </div>
+                          </div>
+                        </div>
+                        <div class="  ques-div">
+                          <div class="col-md-12">
+                            <p>Date of last chest X-ray:</p>
+                            <div class="radio-btn"> <span>
+                              <input type="radio" class=" with-gap" id="Norl2" name="chest" ng-value="'Normal'" ng-model="presentinfo.ans.dateOflastChestXRay">
+                              <label for="Norl2" class="datepicker">Normal</label>
+                              </span><span>
+                              <input class="with-gap" name="chest" type="radio" id="Abnormal2" ng-value="'Abnormal'" ng-model="presentinfo.ans.dateOflastChestXRay" />
+                              <label for="Abnormal2">Abnormal</label>
+                              </span> <span>
+                              <input class="with-gap" name="chest" type="radio" id="Never2 " ng-value="'Never'" ng-model="presentinfo.ans.dateOflastChestXRay" />
+                              <label for="Never2 ">Never </label>
+                              </span> <span>
+                              <input class="with-gap" name="chest" type="radio" id="remember2" ng-value="'Can not remember'" ng-model="presentinfo.ans.dateOflastChestXRay" />
+                              <label for="remember2">Can’t remember</label>
+                              </span> </div>
+                          </div>
+                        </div>
+                        <div class="  ques-div">
+                          <div class="col-md-12">
+                            <p>Date of last electrocardiogram (EKG or ECG):</p>
+                            <div class="radio-btn"> <span>
+                              <input type="radio" class=" with-gap" id="Norl3" name="last" ng-value="'Normal'" ng-model="presentinfo.ans.dateOflastElectrocardiogram">
+                              <label for="Norl3" class="datepicker">Normal</label>
+                              </span><span>
+                              <input class="with-gap" name="last" type="radio" id="Abnormal3" ng-value="'Abnormal'" ng-model="presentinfo.ans.dateOflastElectrocardiogram" />
+                              <label for="Abnormal3">Abnormal</label>
+                              </span> <span>
+                              <input class="with-gap" name="last" type="radio" id="Never3" ng-value="'Never'" ng-model="presentinfo.ans.dateOflastElectrocardiogram" />
+                              <label for="Never3">Never </label>
+                              </span> <span>
+                              <input class="with-gap" name="last" type="radio" id="remember3" ng-value="'Can not remember'" ng-model="presentinfo.ans.dateOflastElectrocardiogram" />
+                              <label for="remember3">Can’t remember</label>
+                              </span> </div>
+                          </div>
+                        </div>
+                        <div class="  ques-div">
+                          <div class="col-md-12">
+                            <p>Date of last dental check up: </p>
+                            <div class="radio-btn"> <span>
+                              <input type="radio" class=" with-gap" id="Norl4" name="chestup" ng-value="'Normal'" ng-model="presentinfo.ans.dateOflastDentalCheckup" />
+                              <label for="Norl4" class="datepicker">Normal</label>
+                              </span><span>
+                              <input class="with-gap" name="chestup" type="radio" id="Abnormal4" ng-value="'Abnormal'" ng-model="presentinfo.ans.dateOflastDentalCheckup" />
+                              <label for="Abnormal4">Abnormal</label>
+                              </span> <span>
+                              <input class="with-gap" name="chestup" type="radio" id="Never4 " ng-value="'Never'" ng-model="presentinfo.ans.dateOflastDentalCheckup" />
+                              <label for="Never4 ">Never </label>
+                              </span> <span>
+                              <input class="with-gap" name="chestup" type="radio" id="remember4" ng-value="'Can not remember'" ng-model="presentinfo.ans.dateOflastDentalCheckup" />
+                              <label for="remember4">Can’t remember</label>
+                              </span> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 other-explain">
+                        <div class="input-field form-group icon-field form-filed rgt">
+                          <textarea id="diagnostic" class="materialize-textarea" ng-model="presentinfo.ans.otherDiagnosticTestsInLat2Years"></textarea>
+                          <label for="diagnostic">List any other medical or diagnostic test you have had in the past two years: </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 other-explain">
+                        <div class="input-field form-group icon-field form-filed rgt">
+                          <textarea id="drug" class="materialize-textarea" ng-model="presentinfo.ans.hospitalizationsIncludingDateAndReason"></textarea>
+                          <label for="drug">List hospitalizations, including dates of and reasons for hospitalization: </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 other-explain">
+                        <div class="input-field form-group icon-field form-filed rgt">
+                          <textarea id="drug" class="materialize-textarea" ng-model="presentinfo.ans.drugAllergies"></textarea>
+                          <label for="drug">List any drug allergies: </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button name="singlebutton" class="btn btn-info btn-sm  btn-design" ng-click="saveData(presentinfo)">Save</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="top_ftr">
+      <div class="row">
+        <div class="col-xs-4">
+          <figure> <img src="images/security_symbol.png" alt="security_symbol"> </figure>
+          <h4>100% Secure Payments</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/timer_symbol.png" alt="timer_symbol"> </figure>
+          <h4>Fast and Easy Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/customer_support.png" alt="customer_support"> </figure>
+          <h4>Best Customer Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ftr_btm">
+      <div class="row">
+        <div class="col-md-3 col-xs-6">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="javascript:void(0);">About Us</a></li>
+            <li><a href="javascript:void(0);">Core Values</a></li>
+            <li><a href="javascript:void(0);">Careers</a></li>
+            <li><a href="javascript:void(0);">Blog</a></li>
+            <li><a href="javascript:void(0);">FAQ</a></li>
+            <li><a href="javascript:void(0);">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>POLICY INFO</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+            <li><a href="javascript:void(0);">Terms of Sale</a></li>
+            <li><a href="javascript:void(0);">Terms of Use</a></li>
+            <li><a href="javascript:void(0);">Takedown Policy</a></li>
+            <li><a href="javascript:void(0);">Sitemm col-md-3ap</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>COINMD BUSINESS</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Seller Registration</a></li>
+            <li><a href="javascript:void(0);">Online Shopping </a></li>
+            <li><a href="javascript:void(0);">Book Doctors Online </a></li>
+            <li><a href="javascript:void(0);">Advertise on CoinMD</a></li>
+            <li><a href="javascript:void(0);">Media Enquiries</a></li>
+            <li><a href="javascript:void(0);">Be an Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>NEED HELP ?</h4>
+          <div class="subscribe">
+            <input type="text" class="form-control" placeholder="Email Address">
+            <input type="button" class="btn_sub" value="Subscribe">
+          </div>
+          <ul class="social_links">
+            <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          </ul>
+          <di class="copy_right">
+            <p>COPYRIGHT 2017 COINMD, INC.</p>
+          </di>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,499 @@
+<section class="dr-main-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="dr-header-sec">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="logo"><a href="index.html"><img src="images/logo.png" alt="CoinMD"></a></div>
+            </div>
+            <div class="col-md-9 col-sm-12 text-center">
+              <div class="right-sec-header">
+                <ul class="pull-right">
+                    <li class="btn logeninfon-btn"> <a href="javascript:;" class="dropdown-toggle" ng-click="logout()"> Logout </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="contant-box">
+  <div class="Create Leads">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-4">
+          <div class="page-name">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-listing">
+    <div class="form-box lead">
+      <div class="container bg-white">
+        <ul class="ccollapsible popout" data-collapsible="accordion">
+           
+           
+           
+          <li class="form-box lead ">
+            <div class="collapsible-header active">Other Heart Disease Risk Factors <i class="fa fa-angle-right"></i></div>
+            <div class="collapsible-body" >
+              <div class="col-div hedi-p">
+                <h4>Smoking </h4>
+                <form class="form-tag">
+                  <div class="row">
+                    <div class="col-md-12 radio-btn">
+                      <p>{{otheinfo.ques.smoke}}</p>
+                      <span>
+                      <input class="with-gap" name="smoked" id="smokedyes" type="radio" ng-value="true" ng-model="otheinfo.ans.isSmoker">
+                      <label for="smokedyes">Yes</label>
+                      </span><span>
+                      <input class="with-gap" name="smoked" id="smokedno" ng-value="false" ng-model="otheinfo.ans.isSmoker" type="radio">
+                      <label for="smokedno">No</label>
+                      </span>
+                      <div class="select-per-day">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="ques-p">{{otheinfo.ques.noc}}</p>
+                          </div>
+                          <div class="col-md-3">
+                            <input  type="text" class="Age-started" ng-model="otheinfo.ans.ciggPD" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="ques-p">{{otheinfo.ques.nocig}}</p>
+                          </div>
+                          <div class="col-md-3">
+                            <input  type="text" class="Age-started" ng-model="otheinfo.ans.cigarsPD" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="ques-p">{{otheinfo.ques.nop}} </p>
+                          </div>
+                          <div class="col-md-3">
+                            <input  type="text" class="Age-started" ng-model="otheinfo.ans.pipePD" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="ques-p">{{otheinfo.ques.nod}} </p>
+                          </div>
+                          <div class="col-md-3">
+                            <input  type="text" class="Age-started" ng-model="otheinfo.ans.stoppedSmoking" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p class="ques-p">{{otheinfo.ques.hmd}}</p>
+                          </div>
+                          <div class="col-md-3">
+                            <input  type="text" class="Age-started" ng-model="otheinfo.ans.smokingStarted" />
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+            
+                <h4>Diet </h4>
+              
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="consider" type="text" ng-model="otheinfo.ans.whatYouConsiderGoodWeight">
+                        <label for="consider">{{otheinfo.ques.gw}}</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="most" type="text" ng-model="otheinfo.ans.heighestWeight" />
+                        <label for="most">{{otheinfo.ques.mw}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="were" type="text"  ng-model="otheinfo.ans.age" />
+                        <label for="were"> {{otheinfo.ques.age}}</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="weight" type="text" ng-model="otheinfo.ans.currentWeight">
+                        <label for="weight">{{otheinfo.ques.cw}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="One" type="text" ng-model="otheinfo.ans.weightAYearAgo" />
+                        <label for="One"> One year ago my weight was.</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="was" type="text" ng-model="otheinfo.ans.weightAt21" />
+                        <label for="was">At age 21 my weight was.</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                       
+                    </div>
+                  </div>
+                
+                <hr>
+          
+                  <p>Number of times per week you usually eat the following:</p>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Beef " type="text" ng-model="otheinfo.anstimesAWeekbeef">
+                        <label for="Beef "> Beef </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="Fish " type="text" ng-model="otheinfo.ans.timesAWeekfish" />
+                        <label for="Fish ">Fish </label>
+                      </div>
+                    </div>                   
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="Dessertt" type="text" ng-model="otheinfo.ans.timesAWeekdessert" />
+                        <label for="Dessertt ">Dessert </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Pork " type="text" ng-model="otheinfo.ans.timesAWeekpork" />
+                        <label for="Pork "> Pork </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="Fowl " type="text" ng-model="otheinfo.ans.timesAWeekfowl" />
+                        <label for="Fowl ">Fowl </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Fried " type="text" ng-model="otheinfo.ans.timesAWeekfriedFood" />
+                        <label for="Fried "> Fried Foods </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      
+                    </div>
+                  </div>
+                
+                <hr>
+                 
+                  <p>Number of servings (cups, glasses, or containers) per week you usually consume of:</p>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Homogenized " type="text" ng-model="otheinfo.ans.homogenizedMilk" />
+                        <label for="Homogenized "> Homogenized (whole) milk </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="Buttermilk  " type="text" ng-model="otheinfo.ans.buttermilk" />
+                        <label for="Buttermilk  ">Buttermilk </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Skim" type="text" ng-model="otheinfo.ans.skimMilk" />
+                        <label for="Skim">Skim (non-fat) milk</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="milk" type="text" ng-model="otheinfo.ans.twoPercentMilk" />
+                        <label for="milk ">2% (low-fat) milk </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="low " type="text" ng-model="otheinfo.ans.onePercentMilk" />
+                        <label for="low "> 1% (low-fat) milk </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field form-group  icon-field form-filed lft no-icon">
+                        <input id="Coffee " type="text" ng-model="otheinfo.ans.coffee" />
+                        <label for="Coffee ">Coffee </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Tea " type="text" ng-model="otheinfo.ans.tea" />
+                        <label for="Tea "> Tea (iced or not) </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Regular " type="text" ng-model="otheinfo.ans.sodas" />
+                        <label for="Regular "> Regular or diet sodas </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="input-field   form-group icon-field form-filed lft no-icon">
+                        <input id="Glasses " type="text" ng-model="otheinfo.ans.glassOfWater" />
+                        <label for="Glasses "> Glasses of water </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      
+                    </div>
+                  </div>
+                
+                <hr>
+                
+                  <h4>Alcoholic </h4>
+                  <div class="row">
+                  <div class="col-md-12">
+                    <div class="  ques-div">
+                      <div class="col-md-12">
+                        <p>Do you ever drink alcoholic beverages?</p>
+                        <div class="radio-btn"> <span>
+                          <input class="with-gap" name="beverages" id="beveragesyes" type="radio" ng-value="true" ng-model="otheinfo.ans.isAlcoholic">
+                          <label for="beveragesyes">Yes</label>
+                          </span> <span>
+                          <input class="with-gap" name="beverages" id="beveragesno" type="radio" ng-value="false" ng-model="otheinfo.ans.isAlcoholic">
+                          <label for="beveragesno">No</label>
+                          </span> </div>
+                      </div>
+                    </div>
+                    <p>If yes, what is your approximate intake of these beverages?</p>
+                    <div class=" ques-div">
+                      <div class="Alcoholic-rad col-lg-12">
+                        <p>Beer</p>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="radio-btn"> <span>
+                              <input class="with-gap" name="intake" id="None" type="radio" ng-value="'None'" ng-model="otheinfo.ans.approxIntake">
+                              <label for="None">None</label>
+                              </span> <span>
+                              <input class="with-gap" name="intake" id="Occasional" type="radio" ng-value="'Occasional'" ng-model="otheinfo.ans.approxIntake">
+                              <label for="Occasional">Occasional</label>
+                              </span> <span>
+                              <input class="with-gap" name="intake" id="Often" type="radio" ng-value="'Often'" ng-model="otheinfo.ans.approxIntake">
+                              <label for="Often">Often </label>
+                              </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="input-field   form-group icon-field form-filed lft no-icon">
+                              <input id="per " type="text" ng-value="true" ng-model="otheinfo.ans.beerperWeek" />
+                              <label for="per "> If often, per week </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" ques-div">
+                      <div class="Alcoholic-rad col-lg-12">
+                        <p>Wine</p>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="radio-btn"> <span>
+                              <input class="with-gap" name="Wine" id="WineNone" type="radio" ng-value="'None'" ng-model="otheinfo.ans.wineapproxIntake" />
+                              <label for="WineNone">None</label>
+                              </span> <span>
+                              <input class="with-gap" name="Wine" id="WineOccasional" type="radio" ng-value="'Occasional'" ng-model="otheinfo.ans.wineapproxIntake" />
+                              <label for="WineOccasional">Occasional</label>
+                              </span> <span>
+                              <input class="with-gap" name="Wine" id="WineOften" type="radio" ng-value="'Often'" ng-model="otheinfo.ans.wineapproxIntake" />
+                              <label for="WineOften">Often </label>
+                              </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="input-field   form-group icon-field form-filed lft no-icon">
+                              <input id="Wineper " type="text" ng-model="otheinfo.ans.wineperWeek" />
+                              <label for="Wineper "> If often, per week </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" ques-div">
+                      <div class="Alcoholic-rad col-lg-12">
+                        <p>Hard Liquor</p>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="radio-btn"> <span>
+                              <input class="with-gap" name="Hard" id="HardNone" type="radio" ng-value="'None'" ng-model="otheinfo.ans.hardLiquorapproxIntake" />
+                              <label for="HardNone">None</label>
+                              </span> <span>
+                              <input class="with-gap" name="Hard" id="HardOccasional" type="radio" ng-value="'Occasional'" ng-model="otheinfo.ans.hardLiquorapproxIntake" />
+                              <label for="HardOccasional">Occasional</label>
+                              </span> <span>
+                              <input class="with-gap" name="Hard" id="HardOften" type="radio" ng-value="'Often'" ng-model="otheinfo.ans.hardLiquorapproxIntake" />
+                              <label for="HardOften">Often </label>
+                              </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="input-field   form-group icon-field form-filed lft no-icon">
+                              <input id="Hardper " type="text" ng-model="otheinfo.ans.hardLiquorperWeek">
+                              <label for="Hardper "> If often, per week </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" ques-div">
+                      <div class="Alcoholic-rad col-lg-12">
+                        <p>At any time in the past, were you a heavy drinker (consumption of six ounces of hard liquor per day or more)?</p>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="radio-btn"> <span>
+                              <input class="with-gap" name="time" id="heavy" type="radio" ng-value="true" ng-model="otheinfo.ans.heavyDrinkerstatus" />
+                              <label for="heavy">Yes</label>
+                              </span> <span>
+                              <input class="with-gap" name="time" id="drinker" type="radio" ng-value="false" ng-model="otheinfo.ans.heavyDrinkerstatus" />
+                              <label for="drinker">No</label>
+                              </span> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 other-explain">
+                      <div class="input-field form-group icon-field form-filed rgt">
+                        <textarea id="alco-Person" class="materialize-textarea" ng-model="otheinfo.ans.heavyDrinkercomments"></textarea>
+                        <label for="alco-Person">Comments </label>
+                      </div>
+                    </div>
+                    <div class=" ques-div">
+                      <div class="Alcoholic-rad col-lg-12">
+                        <p>Do you usually use oil or margarine in place of high cholesterol shortening or butter?</p>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="radio-btn"> <span>
+                              <input class="with-gap" name="margarine" id="shortening" type="radio" ng-value="true" ng-model="otheinfo.ans.useOfOilOrMargarineInPlaceOfButter" />
+                              <label for="shortening">Yes</label>
+                              </span> <span>
+                              <input class="with-gap" name="margarine" id="cholesterol" type="radio" ng-value="false" ng-model="otheinfo.ans.useOfOilOrMargarineInPlaceOfButter" />
+                              <label for="cholesterol">No</label>
+                              </span> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-12">
+                      
+                    </div>
+                  </div>
+                  </div>
+                  <button name="singlebutton" class="btn btn-info btn-sm  btn-design" ng-click="saveData(otheinfo)">Save</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="top_ftr">
+      <div class="row">
+        <div class="col-xs-4">
+          <figure> <img src="images/security_symbol.png" alt="security_symbol"> </figure>
+          <h4>100% Secure Payments</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/timer_symbol.png" alt="timer_symbol"> </figure>
+          <h4>Fast and Easy Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/customer_support.png" alt="customer_support"> </figure>
+          <h4>Best Customer Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ftr_btm">
+      <div class="row">
+        <div class="col-md-3 col-xs-6">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="javascript:void(0);">About Us</a></li>
+            <li><a href="javascript:void(0);">Core Values</a></li>
+            <li><a href="javascript:void(0);">Careers</a></li>
+            <li><a href="javascript:void(0);">Blog</a></li>
+            <li><a href="javascript:void(0);">FAQ</a></li>
+            <li><a href="javascript:void(0);">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>POLICY INFO</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+            <li><a href="javascript:void(0);">Terms of Sale</a></li>
+            <li><a href="javascript:void(0);">Terms of Use</a></li>
+            <li><a href="javascript:void(0);">Takedown Policy</a></li>
+            <li><a href="javascript:void(0);">Sitemm col-md-3ap</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>COINMD BUSINESS</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Seller Registration</a></li>
+            <li><a href="javascript:void(0);">Online Shopping </a></li>
+            <li><a href="javascript:void(0);">Book Doctors Online </a></li>
+            <li><a href="javascript:void(0);">Advertise on CoinMD</a></li>
+            <li><a href="javascript:void(0);">Media Enquiries</a></li>
+            <li><a href="javascript:void(0);">Be an Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>NEED HELP ?</h4>
+          <div class="subscribe">
+            <input type="text" class="form-control" placeholder="Email Address">
+            <input type="button" class="btn_sub" value="Subscribe">
+          </div>
+          <ul class="social_links">
+            <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          </ul>
+          <di class="copy_right">
+            <p>COPYRIGHT 2017 COINMD, INC.</p>
+          </di>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

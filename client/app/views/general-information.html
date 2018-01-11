@@ -1,0 +1,316 @@
+<div class="col-lg-12 col-sm-12 col-xs-12 alert alert-success" ng-show="successMessagebool ">
+    <strong>Successfully Writen Into Blockchain</strong>
+</div>
+<div class="col-lg-12 col-sm-12 col-xs-12 alert alert-danger" ng-show="errorMessagebool ">
+    <strong>Something Went Wrog. Please Try Again</strong>
+</div>
+<section class="dr-main-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="dr-header-sec">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="logo"><a href="index.html"><img src="images/logo.png" alt="CoinMD"></a></div>
+            </div>
+            <div class="col-md-9 col-sm-12 text-center">
+              <div class="right-sec-header">
+                <ul class="pull-right">
+                  <li class="btn logeninfon-btn"> <a href="javascript:;" class="dropdown-toggle" ng-click="logout()"> Logout </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="contant-box">
+  <div class="Create Leads">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-4">
+          <div class="page-name">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-listing">
+    <div class="form-box lead">
+      <div class="container bg-white">
+        <ul class="ccollapsible popout" data-collapsible="accordion">
+          <li class="form-box lead active">
+            <div class="collapsible-header active">General Information <i class="fa fa-angle-right"></i></div>
+            <div class="collapsible-body" >
+              <div class="col-div hedi-p">
+                <h4>{{geninfo.ques.pheading}} </h4>
+                <form class="form-tag">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field   form-group icon-field form-filed lft"> <i class="name-icon icon-form"></i>
+                        <input id="Lead_name" type="text" ng-model="geninfo.ppt.name">
+                        <label for="Lead_name">{{geninfo.ques.pname}}</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed lft"><i class="telephone-Number-icon icon-form"></i>
+                        <input id="Lead-Source" type="text" ng-model="geninfo.ppt.mobileNo">
+                        <label for="Lead-Source">{{geninfo.ques.pno}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 datepicker-bx DOIncorp">
+                      <div class="input-field form-group  icon-field form-filed rgt"><i class="Starts-Date-icon icon-form"></i>
+                        <label   class="lable-top">{{geninfo.ques.pdoi}}</label>
+                        <input type="text" class="datepicker" placeholder="dd/mm/yy" ng-model="geninfo.ppt.doi">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group icon-field form-filed rgt"><i class="address_icon icon-form"></i>
+                        <textarea id="icon_prefix2" class="materialize-textarea" ng-model="geninfo.ppt.address"></textarea>
+                        <label for="icon_prefix21">{{geninfo.ques.paddr}} </label>
+                      </div>
+                    </div>
+                  </div>
+                  <h4>{{geninfo.ques.h4}}</h4>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed  "> <i class="name-icon icon-form"></i>
+                        <input id="Lead_name" type="text" ng-model="geninfo.php.name">
+                        <label for="Lead_name">{{geninfo.ques.h4optn1}}</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed lft"><i class="telephone-Number-icon icon-form"></i>
+                        <input id="Lead-Source" type="text" ng-model="geninfo.php.mobileNo">
+                        <label for="Lead-Source">{{geninfo.ques.h4optn2}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed sel-opt"><i class="City-icon icon-form"></i>
+                        <select ng-model="geninfo.php.city">
+                          <option value="" disabled selected>{{geninfo.ques.h4optn3}}</option>
+                          <option value="1">Noida</option>
+                          <option value="2">Meerut</option>
+                          <option value="3">Rampur</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group icon-field form-filed rgt"><i class="address_icon icon-form"></i>
+                        <textarea id="Address-Person" class="materialize-textarea" ng-model="geninfo.php.address"></textarea>
+                        <label for="Address-Person">{{geninfo.ques.h4addre}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="  ques-div">
+                      <div class="col-md-12">
+                        <p>{{geninfo.ques.phques}} </p>
+                        <div class="radio-btn"> <span>
+                          <input class="with-gap" name="group1" type="radio" id="yes" ng-value="true" ng-model="geninfo.permission"/>
+                          <label for="yes">Yes</label>
+                          </span> <span>
+                          <input class="with-gap" name="group1" type="radio" id="no" ng-value="false" ng-model="geninfo.permission"/>
+                          <label for="no">No</label>
+                          </span> </div>
+                      </div>
+                    </div>
+                    <div class="  ques-div">
+                      <div class="col-md-12">
+                        <p>Marital Status: </p>
+                        <div class="radio-btn"> <span>
+                          <input class="with-gap" name="Marital" type="radio" id="Single" ng-value="'single'" ng-model="geninfo.martialStatus" />
+                          <label for="Single">{{geninfo.ques.s}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Marital" type="radio" id="Married" ng-value="'married'" ng-model="geninfo.martialStatus" />
+                          <label for="Married">{{geninfo.ques.m}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Marital" type="radio" id="Divorced" ng-value="'divorced'" ng-model="geninfo.martialStatus" />
+                          <label for="Divorced">{{geninfo.ques.d}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Marital" type="radio" id="Widowed" ng-value="'widowed'" ng-model="geninfo.martialStatus" />
+                          <label for="Widowed">{{geninfo.ques.w}} </label>
+                          </span> </div>
+                      </div>
+                    </div>
+                    <div class="  ques-div">
+                      <div class="col-md-12">
+                        <p>Gender</p>
+                        <div class="radio-btn"> <span>
+                          <input class="with-gap" name="Sex" type="radio" id="Male" ng-value="'male'" ng-model="geninfo.gender" />
+                          <label for="Male">{{geninfo.ques.sexm}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Sex" type="radio" id="Female" ng-value="'female'" ng-model="geninfo.gender" />
+                          <label for="Female">{{geninfo.ques.sexf}}</label>
+                          </span> </div>
+                      </div>
+                    </div>
+
+                    <div class="  ques-div">
+                      <div class="col-md-12">
+                        <p>Education </p>
+                        <div class="radio-btn" ng-init="geninfo.education=a"> <span>
+                          <input class="with-gap" name="Education" type="radio" id="Education2" ng-value="'Grade School'" ng-model="geninfo.education"  />
+                          <label for="Education2">{{geninfo.ques.gradeschool}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Education" type="radio" id="High" ng-value="'Jr. High School'" ng-model="geninfo.education"  />
+                          <label for="High">{{geninfo.ques.jrschool}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Education" type="radio" id="School" ng-value="'High School'" ng-model="geninfo.education"  />
+                          <label for="School">{{geninfo.ques.highscool}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Education" type="radio" id="College" ng-value="'College (2-4 years)'" ng-model="geninfo.education"  />
+                          <label for="College">{{geninfo.ques.college}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Education" type="radio" id="Graduate" ng-value="'Graduate School'" ng-model="geninfo.education"  />
+                          <label for="Graduate">{{geninfo.ques.grad}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="Education" type="radio" id="Degree" ng-value="'Degree'" ng-model="geninfo.education"  />
+                          <label for="Degree">{{geninfo.ques.degree}}</label>
+                          </span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4>Occupation </h4>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field   form-group icon-field form-filed lft"> <i class="name-icon icon-form"></i>
+                        <input id="Position " type="text" ng-model="geninfo.occupation.position" >
+                        <label for="Position "> {{geninfo.ques.ocpos}} </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed lft"><i class="telephone-Number-icon icon-form"></i>
+                        <input id="Employer " type="text" ng-model="geninfo.occupation.employer" >
+                        <label for="Employer ">{{geninfo.ques.ocemp}} </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-field form-group  icon-field form-filed lft"><i class="telephone-Number-icon icon-form"></i>
+                        <input id="Employer " type="text" ng-model="geninfo.occupation.employerContact" >
+                        <label for="Employer ">{{geninfo.ques.ocuphn}} </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-field form-group icon-field form-filed rgt"><i class="address_icon icon-form"></i>
+                        <textarea id="icon_Address " class="materialize-textarea" ng-model="geninfo.occupation.Employeraddress" ></textarea>
+                        <label for="icon_Address ">{{geninfo.ques.occaddr}} </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row hedi-p">
+                    <div class="  ques-div  ">
+                      <div class="col-md-12">
+                        <p>{{geninfo.ques.purpose}} </p>
+                        <div class="radio-btn"> <span>
+                          <input class="with-gap" name="determine" type="radio" id="determine" ng-value="'To determine my current level of physical fitness and to receive recommendations for an exercise program.'"  ng-model="geninfo.rop.choice"/>
+                          <label for="determine">{{geninfo.ques.purposeans1}}</label>
+                          </span> <span>
+                          <input class="with-gap" name="determine" type="radio" id="Other" ng-value="'other'"  ng-model="geninfo.rop.choice" />
+                          <label for="Other">{{geninfo.ques.purposeans2}}</label>
+                          <div class="col-md-12 other-explain">
+                            <div class="input-field form-group icon-field form-filed rgt">
+                              <textarea id="Address-Person" class="materialize-textarea" ng-model="geninfo.rop.reason"></textarea>
+                              <label for="Address-Person">Explain.. </label>
+                            </div>
+                          </div>
+                          </span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button name="singlebutton" class="btn btn-info btn-sm  btn-design" ng-click="saveData(geninfo)">Save</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="top_ftr">
+      <div class="row">
+        <div class="col-xs-4">
+          <figure> <img src="images/security_symbol.png" alt="security_symbol"> </figure>
+          <h4>100% Secure Payments</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/timer_symbol.png" alt="timer_symbol"> </figure>
+          <h4>Fast and Easy Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+        <div class="col-xs-4">
+          <figure> <img src="images/customer_support.png" alt="customer_support"> </figure>
+          <h4>Best Customer Service</h4>
+          <p>Moving your card details to a much more secured place.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ftr_btm">
+      <div class="row">
+        <div class="col-md-3 col-xs-6">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="javascript:void(0);">About Us</a></li>
+            <li><a href="javascript:void(0);">Core Values</a></li>
+            <li><a href="javascript:void(0);">Careers</a></li>
+            <li><a href="javascript:void(0);">Blog</a></li>
+            <li><a href="javascript:void(0);">FAQ</a></li>
+            <li><a href="javascript:void(0);">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>POLICY INFO</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+            <li><a href="javascript:void(0);">Terms of Sale</a></li>
+            <li><a href="javascript:void(0);">Terms of Use</a></li>
+            <li><a href="javascript:void(0);">Takedown Policy</a></li>
+            <li><a href="javascript:void(0);">Sitemm col-md-3ap</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>COINMD BUSINESS</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Seller Regeninfostration</a></li>
+            <li><a href="javascript:void(0);">Online Shopping </a></li>
+            <li><a href="javascript:void(0);">Book Doctors Online </a></li>
+            <li><a href="javascript:void(0);">Advertise on CoinMD</a></li>
+            <li><a href="javascript:void(0);">Media Enquiries</a></li>
+            <li><a href="javascript:void(0);">Be an Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4>NEED HELP ?</h4>
+          <div class="subscribe">
+            <input type="text" class="form-control" placeholder="Email Address">
+            <input type="button" class="btn_sub" value="Subscribe">
+          </div>
+          <ul class="social_links">
+            <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          </ul>
+          <di class="copy_right">
+            <p>COPYRIGHT 2017 COINMD, INC.</p>
+          </di>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

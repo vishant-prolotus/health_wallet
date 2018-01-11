@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js"> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoinMD</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700" rel="stylesheet">
+    <link href="https://blackrockdigital.github.io/startbootstrap-sb-admin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/materialize.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/angular-block-ui/dist/angular-block-ui.min.css"/>
+    <base href="/">
+</head>
+<body onbeforeunload="return myFunction()">
+  <div ng-view>
+      
+  </div>
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/materialize.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="bower_components/angular-block-ui/dist/angular-block-ui.min.js"></script>
+  <script src="js/patientInfo.controller.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script>
+      $('.datepicker').pickadate({
+        selectMonths: true,
+        selectYears: 55,
+        today: 'Today',
+        clear: 'Clear',
+        close: 'Ok',
+        closeOnSelect: false 
+      });
+      
+       $('.datepicker2').pickadate({
+        selectMonths: true, 
+        selectYears: 55, 
+        today: 'Today',
+        clear: 'Clear',
+        close: 'Ok',
+        closeOnSelect: false
+      });
+      
+      $(document).ready(function() {
+        $('select').material_select();
+      });
+      function myFunction() {
+        window.localStorage.clear();
+      }
+    </script>
+</body>
+</html>
